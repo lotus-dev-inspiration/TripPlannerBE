@@ -1,2 +1,2 @@
 # TripPlannerBE
-Backend project for Trip Planner application
+Backend project for the Trip Planner application

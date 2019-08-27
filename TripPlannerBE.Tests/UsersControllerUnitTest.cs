@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using Entities.Models;
 using TripPlannerBE.Repositories;
 
-namespace TripPlannerBE.Tests
+namespace TripPlannerBE.UnitTests
 {
 	public class UsersControllerUnitTest
 	{

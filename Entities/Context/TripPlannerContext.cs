@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TripPlannerBE.Models;
+using Entities.Models;
 
-namespace TripPlannerBE.Context
+namespace Entities.Context
 {
 	public class TripPlannerContext	: DbContext
 	{

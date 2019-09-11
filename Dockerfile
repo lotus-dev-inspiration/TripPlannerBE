@@ -5,13 +5,13 @@ FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
 
 COPY TripPlannerBE/TripPlannerBE.csproj TripPlannerBE/
+COPY . .
 RUN dotnet restore TripPlannerBE/TripPlannerBE.csproj
 
 # COPY ./TripPlannerBE ./TripPlannerBE/
 # COPY ./Repository ./Repository/
 # COPY ./Entities ./Entities/
 
-COPY . .
 
 WORKDIR /src/TripPlannerBE
 # RUN dotnet build TripPlannerBE.csproj -c Release -o /app

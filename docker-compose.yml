@@ -1,10 +1,8 @@
-nginx:
-    build: ./nginx
-    links:
-        - kestrel:kestrel
-    ports:
-        - "80:80"
-kestrel:
-    build: .
-    ports:
-        - "80"
+version: '3.4'
+
+services:
+  tripplannerbe:
+    image: ${DOCKER_REGISTRY-}tripplannerbe
+    build:
+      context: .
+      dockerfile: TripPlannerBE/Dockerfile
